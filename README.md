@@ -54,7 +54,7 @@ JobTracker is a work tracking automation system built with C# and WinForms. It a
 ---
 
 # JobTracker
-**WinForms ile geliştirilmiş bir iş başvuru takip uygulaması**
+**WinForms ile geliştirilmiş bir iş takip otomasyon uygulaması**
 
 ---
 
