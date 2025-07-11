@@ -99,17 +99,18 @@ JobTracker is a work tracking automation system built with C# and WinForms. It a
 
 # Screenshots
 
-![Login Screen](ScreenShots/Ekran görüntüsü 2025-07-11 091534.png)
+![LoginScreen](ScreenShots/2.png)
 
-![Registion Screen](ScreenShots/Ekran görüntüsü 2025-07-11 091516.png)
+![RegistionScreen](ScreenShots/3.png)
 
-![Employee Screen](ScreenShots/Ekran görüntüsü 2025-07-11 091606.png)
+![EmployeeScreen](ScreenShots/4.png)
 
-![Employee Shift Screen](ScreenShots/Ekran görüntüsü 2025-07-11 091659.png)
 
-![Management Screen](ScreenShots/Ekran görüntüsü 2025-07-11 091738.png)
+![ManagementScreen](ScreenShots/6.png)
 
-![Tables Screen](ScreenShots/Ekran görüntüsü 2025-07-11 091838.png)
+![TablesScreen](ScreenShots/7.png)
+
+![TablesScreen](ScreenShots/8.png)
 
 ----
 
