@@ -59,7 +59,9 @@ JobTracker is a work tracking automation system built with C# and WinForms. It a
 ---
 
 ## 🚀 Genel Bakış
-JobTracker, C# ve WinForms kullanılarak geliştirilmiş bir iş takip otomasyon sistemidir. Sistem, kullanıcıların kaydedilmesini, günlük yapılan işlerin girilmesini, yöneticilerin bu verileri tarihe veya kişiye göre filtreleyerek görüntülemesini sağlar. Giriş işlemleri TC kimlik numarası ve şifre ile yapılır (mobil sürümde bulunmamaktadır).
+
+**JobTracker**, C# ve WinForms kullanılarak geliştirilmiş bir iş takip otomasyon sistemidir. Sistem, kullanıcıların kaydedilmesini, günlük yapılan işlerin girilmesini, yöneticilerin bu verileri tarihe veya kişiye göre filtreleyerek görüntülemesini sağlar. Giriş işlemleri TC kimlik numarası ve şifre ile yapılır (mobil sürümde bulunmamaktadır).
+
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
@@ -97,6 +99,22 @@ JobTracker, C# ve WinForms kullanılarak geliştirilmiş bir iş takip otomasyon
 
 ---
 
+# Screenshots
+
+![Login Screen](d/1JdWYb74vyy5BBP4QkTCeDkH9w6GoNGHh)
+
+![Registion Screen](d/1JdWYb74vyy5BBP4QkTCeDkH9w6GoNGHh)
+
+![Employee Screen](d/16QU6UVHTLVuwf3uFMlmzYNm_s5icQ9xZ)
+
+![Employee Shift Screen](d/1xtcGWfm-71e5Eq2YTm22-IpwkEOc0y93)
+
+![Management Screen](d/1mlo-k1uoqOCkO_nmQSSCV90Mhmzchi3V)
+
+![Tables Screen](d/1Turc8wMKcqToKEs03twUqfbVXEY9ea_h)
+
+----
+
 ## 📥 Kurulum
 
 Depoyu klonlayın:
@@ -122,23 +140,3 @@ SQL Server kullanıyorsanız Data Source, Initial Catalog ve Integrated Security
 
 ---
 
-# Screenshots
-
-**LOGIN SCREEN**
-<img width="1907" height="985" alt="Ekran görüntüsü 2025-07-11 091534" src="https://github.com/user-attachments/assets/605c8779-8b53-41b8-ab42-6a92eeadfc90" />
-
-**Registiration Screen**
-<img width="1918" height="986" alt="Ekran görüntüsü 2025-07-11 091516" src="https://github.com/user-attachments/assets/dfeac8f6-95b4-409f-b875-e4767ef1d60e" />
-
-**Employee Screen**
-<img width="1900" height="1007" alt="Ekran görüntüsü 2025-07-11 091622" src="https://github.com/user-attachments/assets/aad20dc8-c1ae-4745-acda-6a2ba23c0380" />
-
-**Employee Work Log Screen**
-<img width="1916" height="1022" alt="Ekran görüntüsü 2025-07-11 091659" src="https://github.com/user-attachments/assets/076536f5-190f-4e1c-b978-fafab34ca60e" />
-
-**Management Screen**
-<img width="1897" height="980" alt="Ekran görüntüsü 2025-07-11 091738" src="https://github.com/user-attachments/assets/1ddfd170-b7fb-4e1f-8b56-e817e175cc85" />
-
-
-**Tables Screen**
-<img width="1911" height="972" alt="Ekran görüntüsü 2025-07-11 091838" src="https://github.com/user-attachments/assets/69bf9f7f-768e-428a-a8fc-04d9fc8cae3f" />
