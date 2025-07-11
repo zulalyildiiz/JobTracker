@@ -15,9 +15,9 @@ namespace JobTracker
     public partial class Form2 : Form
     {
         private SqlConnection conn;
-        string connectionString = "Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;";
+        string connectionString = "connection string";
 
-        public string nid { get; set; }
+        
         public Form2()
         {
             InitializeComponent();
@@ -80,7 +80,7 @@ namespace JobTracker
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             bool hasReg = false;
-            using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+            using (SqlConnection conn = new SqlConnection("connection string"))
             {
                 conn.Open();
                 SqlCommand selectQuery = new SqlCommand("SELECT * FROM ShiftLogs WHERE date = @date AND nationalID = @nationalID", conn);
@@ -100,7 +100,7 @@ namespace JobTracker
             {
                 try
                 {
-                    using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                    using (SqlConnection conn = new SqlConnection("connection string"))
                     {
                         conn.Open();
                         SqlCommand insertQuery = new SqlCommand("INSERT INTO ShiftLogs (nationalID, date, description) VALUES (@nationalID, @date, @description)", conn);
@@ -137,7 +137,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT name AS[İsim], surname AS[Soyisim], department AS[Departman] FROM Employee WHERE authority = 'personel'", conn))
@@ -159,7 +159,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     using (SqlDataAdapter da = new SqlDataAdapter("SELECT name AS[İsim], surname AS[Soyisim], department AS[Departman] FROM Employee WHERE authority = 'yönetim'", conn))
@@ -193,7 +193,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     string query = "SELECT e.name + ' ' + e.surname AS [Personel], " +
@@ -247,7 +247,7 @@ namespace JobTracker
         private void button1_Click(object sender, EventArgs e)
         {
             bool hasReg = false;
-            using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+            using (SqlConnection conn = new SqlConnection("connection string"))
             {
                 conn.Open();
                 SqlCommand selectQuery = new SqlCommand("SELECT * FROM ShiftLogs WHERE date = @date", conn);
@@ -266,7 +266,7 @@ namespace JobTracker
             {
                 try
                 {
-                    using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                    using (SqlConnection conn = new SqlConnection("connection string"))
                     {
                         conn.Open();
                         SqlCommand insertQuery = new SqlCommand("INSERT INTO ShiftLogs (nationalID, date, description) VALUES (@nationalID, @date, @description)", conn);
@@ -317,7 +317,7 @@ namespace JobTracker
         private void button9_Click(object sender, EventArgs e)
         {
             bool hasReg = false;
-            using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+            using (SqlConnection conn = new SqlConnection("connection string"))
             {
                 conn.Open();
                 SqlCommand selectQuery = new SqlCommand("SELECT * FROM ShiftLogs WHERE date = @date AND nationalID = @nationalID", conn);
@@ -337,7 +337,7 @@ namespace JobTracker
             {
                 try
                 {
-                    using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                    using (SqlConnection conn = new SqlConnection("connection string"))
                     {
                         conn.Open();
                         SqlCommand insertQuery = new SqlCommand("INSERT INTO ShiftLogs (nationalID, date, description) VALUES (@nationalID, @date, @description)", conn);
@@ -384,7 +384,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
 
@@ -415,7 +415,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand("DELETE FROM ShiftLogs WHERE date = @date AND nationalID = @nationalID", conn))

@@ -43,7 +43,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     using (SqlDataAdapter da = new SqlDataAdapter(@"SELECT name AS[İsim], surname AS[Soyisim], department AS[Departman] FROM Employee WHERE authority = 'personel'", conn))
@@ -65,7 +65,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     using (SqlDataAdapter da = new SqlDataAdapter("SELECT name AS[İsim], surname AS[Soyisim], department AS[Departman] FROM Employee WHERE authority = 'yönetim'", conn))
@@ -103,7 +103,7 @@ namespace JobTracker
 
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     string query = "SELECT e.name AS [İsim], e.surname AS [Soyisim], s.date AS [Tarih], s.description AS [Açıklama] " +
@@ -156,7 +156,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     string query = "SELECT e.name AS [İsim], e.surname AS [Soyisim], s.date AS [Tarih], s.description AS [Açıklama] " +
@@ -189,7 +189,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     string query = "SELECT e.name AS [İsim], e.surname AS [Soyisim], s.date AS [Tarih], s.description AS [Açıklama] " +
@@ -245,7 +245,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     string query = @"SELECT userID, name, surname, nationalID FROM Employee WHERE name = @name AND surname = @surname";
@@ -295,7 +295,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     
@@ -327,7 +327,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     using (SqlCommand cmd = new SqlCommand("DELETE s FROM ShiftLogs s INNER JOIN Employee e ON e.nationalID = s.nationalID WHERE e.name = @name AND e.surname = @surname AND s.date = @date", conn))
@@ -372,7 +372,7 @@ namespace JobTracker
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;"))
+                using (SqlConnection conn = new SqlConnection("connection string"))
                 {
                     conn.Open();
                     string query = "DELETE FROM Employee WHERE name = @name AND surname = @surname";

@@ -15,7 +15,7 @@ namespace JobTracker
     public partial class Form4 : Form
     {
         private SqlConnection conn;
-        string connectionString = "Data Source=DELL-G15-5520\\SQLEXPRESS; Initial Catalog = JobTracker; Integrated Security = True; TrustServerCertificate = True;";
+        string connectionString = "connection string";
 
         string userID, name, surname, nationalID, department, password, authority;
 
