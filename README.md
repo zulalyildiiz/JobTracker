@@ -1,5 +1,5 @@
 # JobTracker
-**A WinForms-based Job Application Tracker
+A WinForms-based Job Application Tracker
 
 ## 🚀 Overview
 JobTracker is a work tracking automation system built with C# and WinForms. It allows company staff and administrators to manage user registrations, log daily tasks, view attendance history, and filter reports by person or date. The system supports login functionality based on national ID and password (only available on the desktop version).
