@@ -78,8 +78,7 @@ JobTracker is a work tracking automation system built with C# and WinForms. It a
 - **Kullanıcı Modülü:**  
   - Kullanıcılar bir panel üzerinden sisteme kayıt olabilir.  
   - Kayıt alanları: ID, Ad, Soyad, TC Kimlik No, Çalıştığı Alan, Şifre  
-  - *(Mobil sürümde şifre işlemleri statik olarak yapılmaktadır.)*
-
+ 
 - **Çalışma Modülü:**  
   - Kullanıcılar her gün yaptıkları işleri sisteme girebilir.  
   - Kayıt alanları: ID, Açıklama, KullanıcıID (userID)
@@ -90,7 +89,6 @@ JobTracker is a work tracking automation system built with C# and WinForms. It a
 
 - **Giriş Sistemi:**  
   - Kullanıcılar, TC Kimlik Numarası ve şifre ile giriş yapabilir.  
-  - *(Mobil sürümde giriş özelliği bulunmamaktadır.)*
 
 - **Mesai Takibi:**  
   - Yönetici, kullanıcıların hangi günlerde çalıştığını günlük iş kayıtlarına göre görebilir.
